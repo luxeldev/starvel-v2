@@ -69,14 +69,17 @@ td, th {
   color: inherit;
   text-decoration: none;
 }
-.header .logo {
+.header .box-logo {
+  margin: 15px 0;
+}
+.header .box-logo .logo {
   width: 16px;
   height: 16px;
 }
-.header .logo__Link {
+.header .box-logo .logo__Link {
   transition: border-bottom 0.2s ease-in-out;
 }
-.header .logo__Link:hover {
+.header .box-logo .logo__Link:hover {
   border-bottom: 4px solid #FCA311;
 }
 .header .subbar {
@@ -130,6 +133,40 @@ body {
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 810px) {
+  .header {
+    flex-direction: row;
+  }
+  .header .subbar__Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    margin: 15px 5px;
+    height: 36px;
+    background-color: inherit;
+    border-radius: 10px;
+    color: #FCA311;
+    transition: all 0.5s ease-in;
+  }
+  .header .subbar__Link .subbar__Link__Icon {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.3s linear;
+  }
+  .header .subbar__Link:hover {
+    color: #14213D;
+    background-color: #FCA311;
+    border-radius: 10px;
+    padding: 0 15px;
+  }
+  .header .subbar__Link:hover .subbar__Link__Icon {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
