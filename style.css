@@ -1,0 +1,135 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 800;
+  color: #e5e5e5;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.9);
+}
+.header a {
+  color: inherit;
+  text-decoration: none;
+}
+.header .logo {
+  width: 16px;
+  height: 16px;
+}
+.header .logo__Link {
+  transition: border-bottom 0.2s ease-in-out;
+}
+.header .logo__Link:hover {
+  border-bottom: 4px solid #FCA311;
+}
+.header .subbar {
+  display: flex;
+}
+.header .subbar li {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.header .subbar__Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px;
+  margin: 15px 5px;
+  height: 36px;
+  background-color: inherit;
+  border-radius: 10px;
+  color: #FCA311;
+  transition: all 0.5s ease-in;
+}
+.header .subbar__Link .subbar__Link__Icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s, opacity 0.3s linear;
+}
+.header .subbar__Link:hover {
+  color: #14213D;
+  background-color: #FCA311;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.header .subbar__Link:hover .subbar__Link__Icon {
+  visibility: visible;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "Playwrite";
+  src: url(font/PlaywriteRegular.ttf) format("truetype");
+}
+:root {
+  background: rgba(241, 196, 123, 0.4);
+}
+
+body {
+  font-family: "Playwrite";
+  background: #f2f2f2;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
