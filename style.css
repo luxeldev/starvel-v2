@@ -43,6 +43,11 @@ td, th {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "Playwrite";
   src: url(font/PlaywriteRegular.ttf) format("truetype");
@@ -269,6 +274,35 @@ td, th {
     opacity: 0;
   }
 }
+.card {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 3px 3px 1px rgba(226, 226, 226, 0.7);
+  margin: 5px auto;
+  border: 1px solid #010101;
+  overflow: hidden;
+}
+
+.cardTimber__Label {
+  width: 270px;
+  height: 250px;
+}
+.cardTimber__Label .cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 15px;
+  height: 64.25px;
+}
+.cardTimber__Label .cardText > h3 {
+  margin-bottom: 8px;
+}
+.cardTimber__Label .cardText > p {
+  margin-bottom: 8px;
+}
+
 :root {
   background: rgba(241, 196, 123, 0.4);
 }
