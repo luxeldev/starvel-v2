@@ -158,8 +158,8 @@ a {
 .portfolio {
   width: 100%;
   height: 386px;
-  position: relative;
-  margin: 16px auto 32px auto;
+  position: sticky;
+  margin-bottom: 32px;
   overflow: hidden;
 }
 
@@ -281,26 +281,52 @@ a {
   flex-direction: column;
   box-shadow: 1px 3px 3px 1px rgba(226, 226, 226, 0.7);
   margin: 5px auto;
-  border: 1px solid #010101;
   overflow: hidden;
 }
 
-.cardTimber__Label {
-  width: 270px;
-  height: 250px;
+.cardCountry {
+  width: 265px;
+  height: 215px;
 }
-.cardTimber__Label .cardText {
+.cardCountry img {
+  width: 265px;
+  height: 150px;
+}
+.cardCountry .cardText {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 15px;
-  height: 64.25px;
+  margin-top: 8px;
+  line-height: 1.3;
+  font-size: 83%;
 }
-.cardTimber__Label .cardText > h3 {
-  margin-bottom: 8px;
+.cardCountry .cardText h3 {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-.cardTimber__Label .cardText > p {
-  margin-bottom: 8px;
+.cardCountry .cardText p {
+  font-size: 80%;
+}
+
+.cardHome {
+  width: 125px;
+  height: 165px;
+  position: relative;
+  margin: 15px;
+  box-shadow: 1px 3px 3px 1px transparent;
+}
+.cardHome img {
+  height: 100%;
+}
+.cardHome .cardText {
+  color: #f2f2f2;
+  font-size: 85%;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  text-align: end;
+  z-index: 2;
 }
 
 :root {
@@ -311,8 +337,41 @@ body {
   font-family: "Playwrite";
   background: #f2f2f2;
   max-width: 1440px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
+}
+
+.sectionLocation {
+  margin: 32px 0;
+}
+.sectionLocation .sectionLocation__Text {
+  margin-bottom: 24px;
+}
+.sectionLocation .sectionLocation__Articles {
+  margin: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.sectionActivity {
+  margin: 30px 10px;
+  padding: 15px 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(20, 33, 61, 0.7) 20%, rgba(252, 163, 17, 0.9));
+}
+.sectionActivity .sectionActivity__Title {
+  margin: 0 15px;
+}
+.sectionActivity .sectionActivity__Articles {
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 25px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 @media only screen and (min-width: 810px) {
