@@ -15,10 +15,10 @@
         <nav class="navbar">
             <!-- <a class="menu-bar" href="#"><i class="fa-solid fa-bars"></i> <span class="menu-bar-text">Menu</span></a> -->
             <ul class="subbar">
-                <li><a href="#" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-location-dot fa-bounce"></i><span class="subbar__Link__Text">Destinations</span></a></li>
-                <li><a href="#" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-hotel fa-flip"></i><span class="subbar__Link__Text">Hotels</span></a></li>
-                <li><a href="#" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-plane-departure fa-beat-fade"></i><span class="subbar__Link__Text">Vols</span></a></li>
-                <li><a href="#" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-phone fa-shake"></i><span class="subbar__Link__Text">Contact</span></a></li>
+                <li><a href="destinations.html" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-location-dot fa-bounce"></i><span class="subbar__Link__Text">Destinations</span></a></li>
+                <li><a href="hotels.html" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-hotel fa-flip"></i><span class="subbar__Link__Text">Hotels</span></a></li>
+                <li><a href="vols.html" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-plane-departure fa-beat-fade"></i><span class="subbar__Link__Text">Vols</span></a></li>
+                <li><a href="contact.html" class="subbar__Link"><i class="subbar__Link__Icon fa-solid fa-phone fa-shake"></i><span class="subbar__Link__Text">Contact</span></a></li>
             </ul>
         </nav>
     </header>
@@ -211,7 +211,38 @@
         </div>
     </section>
 
-    <section></section>
+    <section class="sectionRdv">
+        <div class="sectionRdv__Header">
+            <h2>Planifiez un rendez-vous</h2>
+            <p>Pour nous rencontrez afin de vous assurer de la planification de votre voyage dans les moindres détails.</p>
+        </div>
+        <form class="sectionRdv__Form">
+            <div class="sectionRdv__Form__Box">
+                <input type="text" placeholder="Votre Prenom" class="form__Item">
+                <input type="text" placeholder="Votre Nom" class="form__Item">
+                <input type="email" placeholder="Votre Email" class="form__Item">
+            </div>
+            <div class="sectionRdv__Form__Box">
+                <input type="tel" placeholder="Votre Contact" class="form__Item">
+                <select name="objet" id="" class="form__Item">
+                    <option value="0" disabled selected>Objet</option>
+                    <option value="1">Vacances</option>
+                    <option value="2">Week-end</option>
+                    <option value="3">Affaires</option>
+                    <option value="4">Séjour</option>
+                </select>
+            </div>
+            <div class="sectionRdv__Form__Box">
+                <textarea name="" id="" class="form__Item" placeholder="Votre Message ... "></textarea>
+            </div>
+            <div class="sectionRdv__Form__Box">
+                <button>Envoyer</button>
+            </div>
+        </form>
+        <div id="map" class="sectionRdv__Map map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.472282435136!2d1.195144!3d6.201256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTInMDQuNSJOIDHCsDExJzQyLjUiRQ!5e0!3m2!1sfr!2stg!4v1712828088060!5m2!1sfr!2stg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
     <section></section>
 
@@ -231,5 +262,7 @@
             </a>
         </div>
     </footer>
+
+    
 </body>
 </html>
