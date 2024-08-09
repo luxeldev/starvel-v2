@@ -453,6 +453,76 @@ body {
   flex: auto;
 }
 
+.sectionVol {
+  margin: 40px 10px;
+  padding: 5px;
+  background: rgba(20, 33, 61, 0.1);
+  border: 2px solid #e5e5e5;
+}
+.sectionVol .sectionVol__Header {
+  margin: 15px 5px 24px 5px;
+  display: inline-block;
+  font-size: 90%;
+  border-bottom: 2px solid rgba(252, 163, 17, 0.5);
+  margin-bottom: 10px;
+}
+.sectionVol .sectionVol__Form {
+  margin: 0 10px;
+  padding: 10px;
+  border: 2px dashed rgba(252, 163, 17, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionVol .sectionVol__Form__Box {
+  display: flex;
+  gap: 10px;
+}
+.sectionVol .sectionVol__Form__Box .form__Item {
+  font-family: "Playwrite";
+  min-width: 0;
+  max-height: 50px;
+  min-height: 45px;
+  flex: auto;
+  background: rgba(242, 242, 242, 0.5);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  color: rgba(252, 163, 17, 0.8);
+}
+.sectionVol .sectionVol__Form__Box .form__Item::placeholder {
+  opacity: 0.8;
+  color: #010101;
+  font-weight: bold;
+  font-size: 70%;
+}
+.sectionVol .sectionVol__Form__Box .form__Item:focus {
+  outline: 1px solid rgba(252, 163, 17, 0.9);
+  background: rgba(242, 242, 242, 0);
+}
+.sectionVol .sectionVol__Form__Box textarea {
+  height: 100px;
+}
+.sectionVol .sectionVol__Form__Box button {
+  font-family: "Playwrite";
+  font-size: 80%;
+  background: #FCA311;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #202020;
+  margin-top: 30px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.sectionVol .sectionVol__Form__Box button:hover {
+  background: transparent;
+  border: 2px solid #FCA311;
+  color: #FCA311;
+}
+.sectionVol .sectionVol__Form__Box:last-child {
+  justify-content: flex-end;
+}
+
 @media only screen and (min-width: 810px) {
   .header {
     flex-direction: row;
