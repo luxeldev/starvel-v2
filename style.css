@@ -481,8 +481,7 @@ body {
 .sectionVol .sectionVol__Form__Box .form__Item {
   font-family: "Playwrite";
   min-width: 0;
-  max-height: 50px;
-  min-height: 45px;
+  height: 50px;
   flex: auto;
   background: rgba(242, 242, 242, 0.5);
   border: 1px solid #e5e5e5;
@@ -521,6 +520,64 @@ body {
 }
 .sectionVol .sectionVol__Form__Box:last-child {
   justify-content: flex-end;
+}
+
+.sectionVol {
+  background: rgba(252, 163, 17, 0.5);
+  margin: 0;
+  border: none;
+}
+.sectionVol .sectionVol__Header {
+  display: none;
+}
+.sectionVol .sectionVol__Form {
+  margin: 0;
+  padding: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionVol .sectionVol__Form__Box {
+  display: flex;
+  gap: 10px;
+}
+.sectionVol .sectionVol__Form__Box .form__Item {
+  font-family: "Playwrite";
+  min-width: 0;
+  height: 50px;
+  flex: auto;
+  background: rgba(242, 242, 242, 0.5);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  color: rgba(252, 163, 17, 0.8);
+}
+.sectionVol .sectionVol__Form__Box .form__Item::placeholder {
+  opacity: 0.8;
+  color: #010101;
+  font-weight: bold;
+  font-size: 70%;
+}
+.sectionVol .sectionVol__Form__Box .form__Item:focus {
+  outline: 1px solid rgba(252, 163, 17, 0.9);
+  background: rgba(242, 242, 242, 0);
+}
+.sectionVol .sectionVol__Form__Box textarea {
+  height: 100px;
+}
+.sectionVol .sectionVol__Form__Box button {
+  margin: 0;
+}
+.sectionVol .sectionVol__Form__Box:last-child {
+  justify-content: flex-end;
+}
+.sectionVol .sectionVol__Form__Box:nth-child(1) .form__Item {
+  max-width: 150px;
+  background: inherit;
+  border: none;
+}
+.sectionVol .form__Item--date {
+  max-width: 124px;
 }
 
 @media only screen and (min-width: 810px) {

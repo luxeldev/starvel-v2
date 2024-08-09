@@ -33,14 +33,14 @@
                 </select>
                 <select name="" id="" class="form__Item">
                     <option value="1">1 personne</option>
-                    <option value="2">2 personnes</option>
+                    <option value="2" selected>2 personnes</option>
                     <option value="3">3 personnes</option>
                     <option value="4">4 personnes</option>
                     <option value="5">5 personnes</option>
                 </select>
                 <select name="" id="" class="form__Item">
-                    <option value="0" disabled selected>Classe</option>
-                    <option value="1">Économique</option>
+                    <option value="0" disabled>Classe</option>
+                    <option value="1" seleted>Économique</option>
                     <option value="2">Économique premium</option>
                     <option value="3">Affaires</option>
                     <option value="4">Première</option>
@@ -48,12 +48,12 @@
                 </select>
             </div>
             <div class="sectionVol__Form__Box">
-                <input type="text" placeholder="De ..." class="form__Item">
-                <input type="date" class="form__Item">
+                <input type="text" placeholder="De : Lomé" class="form__Item form__Item--location">
+                <input type="text" placeholder="dim. 8/9" onfocus="this.type='date'" class="form__Item form__Item--date">
             </div>
             <div class="sectionVol__Form__Box">
-                <input type="text" placeholder="À ..." class="form__Item">
-                <input type="date" class="form__Item">
+                <input type="text" placeholder="À : Paris" class="form__Item form__Item--location">
+                <input type="text" placeholder="dim. 15/9" onfocus="this.type='date'" class="form__Item form__Item--date">
             </div>
             <div class="sectionVol__Form__Box">
                 <button>Rechercher</button>
