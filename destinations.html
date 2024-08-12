@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="box-logo">
-            <a class="box-logo-text" href="#"><img class="logo" src="assets/icone.png" alt="logo"> <span class="logo__Link">Exploratory</span></a>
+            <a class="box-logo-text" href="index.html"><img class="logo" src="assets/icone.png" alt="logo"> <span class="logo__Link">Exploratory</span></a>
         </div>
         <nav class="navbar">
             <!-- <a class="menu-bar" href="#"><i class="fa-solid fa-bars"></i> <span class="menu-bar-text">Menu</span></a> -->
@@ -22,39 +22,48 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Où allez-vous ?</h1>
-        <form action="">
-            <div>
-                <select name="" id="">
-                    <option value="1">Aller simple</option>
-                    <option value="2" selected>Aller - Retour</option>
-                    <option value="3">Multidestination</option>
-                </select>
-                <select name="" id="">
-                    <option value="1">1 personne</option>
-                    <option value="2">2 personnes</option>
-                    <option value="3">3 personnes</option>
-                    <option value="4">4 personnes</option>
-                    <option value="5">5 personnes</option>
-                </select>
-                <select name="" id="">
-                    <option value="0" disabled selected>Classe</option>
-                    <option value="1">Économique</option>
-                    <option value="2">Économique premium</option>
-                    <option value="3">Affaires</option>
-                    <option value="4">Première</option>
-                    <option value="5">Mixte</option>
-                </select>
-            </div>
-            <div>
-                <input type="text" placeholder="De ...">
-                <input type="text" placeholder="À ...">
-                <input type="date">
-                <input type="date">
-                <button>Rechercher</button>
-            </div>
-        </form>
-    </section>
+    <main>
+
+        <section class="sectionVol">
+            <h1 class="sectionVol__Header">Où allez-vous ?</h1>
+            <form action="" class="sectionVol__Form">
+                <div class="sectionVol__Form__Box">
+                    <select name="" id="" class="form__Item">
+                        <option value="1">Aller simple</option>
+                        <option value="2" selected>Aller - Retour</option>
+                        <option value="3">Multidestination</option>
+                    </select>
+                    <select name="" id="" class="form__Item">
+                        <option value="1">1 personne</option>
+                        <option value="2" selected>2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes</option>
+                    </select>
+                    <select name="" id="" class="form__Item">
+                        <option value="0" disabled>Classe</option>
+                        <option value="1" seleted>Économique</option>
+                        <option value="2">Économique premium</option>
+                        <option value="3">Affaires</option>
+                        <option value="4">Première</option>
+                        <option value="5">Mixte</option>
+                    </select>
+                </div>
+                <div class="sectionVol__Form__Box">
+                    <input type="text" placeholder="De : Lomé" class="form__Item form__Item--location">
+                    <input type="text" placeholder="dim. 8/9" onfocus="this.type='date'" class="form__Item form__Item--date">
+                </div>
+                <div class="sectionVol__Form__Box">
+                    <input type="text" placeholder="À : Paris" class="form__Item form__Item--location">
+                    <input type="text" placeholder="dim. 15/9" onfocus="this.type='date'" class="form__Item form__Item--date">
+                </div>
+                <div class="sectionVol__Form__Box">
+                    <button>Rechercher</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    
 </body>
 </html>
