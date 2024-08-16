@@ -742,22 +742,6 @@ a.cta--Highlight:hover {
   position: relative;
 }
 
-.sectionAgency .sectionAgency__ImageBox {
-  background-color: #44ffa1;
-  margin: 0 auto;
-  width: 281px;
-  height: 281px;
-  border-radius: 140.5px;
-  overflow: hidden;
-}
-
-.sectionAgency .sectionAgency__ImageBox .sectionAgency__ImageBox__Profile {
-  width: 265px;
-  height: 267px;
-  position: relative;
-  top: 19px;
-}
-
 .sectionAgency .sectionAgency__Content {
   color: #ffffff;
   background-color: #24053e;
@@ -776,19 +760,6 @@ a.cta--Highlight:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 31px;
-}
-
-.sectionAgency .sectionAgency__Content .sectionAgency__Content__Title {
-  margin-top: 32px;
-}
-
-.sectionAgency .sectionAgency__Content .sectionAgency__Content__Text {
-  margin: 16px 0 24px 0;
-}
-
-.sectionAgency .sectionAgency__Content .sectionAgency__Content__LinkBox {
-  display: inline-block;
-  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -849,9 +820,6 @@ a.cta--Highlight:hover {
   .sectionAgency {
     width: 689px;
   }
-  .sectionAgency .sectionAgency__ImageBox {
-    margin: 0;
-  }
   .sectionAgency .sectionAgency__Content {
     width: 402px;
     padding: 0 56px;
@@ -859,15 +827,6 @@ a.cta--Highlight:hover {
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: start;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__Title {
-    margin-top: 48px;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__Text {
-    margin: 24px 0;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__LinkBox {
-    margin-bottom: 48px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -905,33 +864,10 @@ a.cta--Highlight:hover {
     width: 1112px;
     margin-top: 110px;
   }
-  .sectionAgency .sectionAgency__ImageBox {
-    background-color: #44ffa1;
-    width: 477px;
-    height: 477px;
-    border-radius: 238.5px;
-    overflow: hidden;
-  }
-  .sectionAgency .sectionAgency__ImageBox .sectionAgency__ImageBox__Profile {
-    width: 450px;
-    height: 453px;
-    position: relative;
-  }
   .sectionAgency .sectionAgency__Content {
     padding: 64px;
-    width: 602px;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__Title {
-    margin: 0;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__Text {
-    margin: 0;
-  }
-  .sectionAgency .sectionAgency__Content .sectionAgency__Content__LinkBox {
-    margin: 0;
   }
 }
-
 @media only screen and (min-width: 810px) {
   .header {
     flex-direction: row;
