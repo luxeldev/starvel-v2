@@ -683,6 +683,10 @@ body {
 .sectionAbout .sectionAbout__Content p {
   color: #584d62;
 }
+.sectionAbout .sectionAbout__Presentation {
+  padding: 24px;
+  background: #14213D;
+}
 
 @media only screen and (min-width: 768px) {
   .title--Small {
