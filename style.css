@@ -508,7 +508,7 @@ body {
   display: flex;
 }
 .sectionRdv .sectionRdv__Map iframe {
-  min-width: 0;
+  height: 400px;
   flex: auto;
 }
 
