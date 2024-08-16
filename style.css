@@ -740,9 +740,6 @@ a.cta--Highlight:hover {
 
 .sectionAgency {
   position: relative;
-  height: 603px;
-  width: 343px;
-  margin: 100px auto 0 auto;
 }
 
 .sectionAgency .sectionAgency__ImageBox {
@@ -762,8 +759,6 @@ a.cta--Highlight:hover {
 }
 
 .sectionAgency .sectionAgency__Content {
-  position: absolute;
-  top: 228px;
   color: #ffffff;
   background-color: #24053e;
   display: -webkit-box;
@@ -780,7 +775,6 @@ a.cta--Highlight:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 375px;
   padding: 0 31px;
 }
 
@@ -853,17 +847,13 @@ a.cta--Highlight:hover {
     text-align: start;
   }
   .sectionAgency {
-    height: 526px;
     width: 689px;
   }
   .sectionAgency .sectionAgency__ImageBox {
     margin: 0;
   }
   .sectionAgency .sectionAgency__Content {
-    top: 151px;
-    left: 175px;
     width: 402px;
-    height: 375px;
     padding: 0 56px;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -913,7 +903,6 @@ a.cta--Highlight:hover {
   }
   .sectionAgency {
     width: 1112px;
-    height: 647.74px;
     margin-top: 110px;
   }
   .sectionAgency .sectionAgency__ImageBox {
@@ -927,14 +916,10 @@ a.cta--Highlight:hover {
     width: 450px;
     height: 453px;
     position: relative;
-    top: 33px;
   }
   .sectionAgency .sectionAgency__Content {
-    top: 173px;
-    left: 382px;
     padding: 64px;
     width: 602px;
-    height: 285px;
   }
   .sectionAgency .sectionAgency__Content .sectionAgency__Content__Title {
     margin: 0;
@@ -944,10 +929,6 @@ a.cta--Highlight:hover {
   }
   .sectionAgency .sectionAgency__Content .sectionAgency__Content__LinkBox {
     margin: 0;
-  }
-  .footer {
-    margin-top: 60px;
-    margin-bottom: 110px;
   }
 }
 
