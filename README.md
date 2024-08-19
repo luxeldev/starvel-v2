@@ -1,4 +1,4 @@
-# loexes20145.workit.io
+# https://loexes20145.github.io/starvel/
 
 ### PREVIEW
 ### ---
