@@ -1,4 +1,4 @@
-# https://loexes20145.github.io/starvel/
+# Star Travel Agency | Web site
 
 ### PREVIEW
 ### ---
