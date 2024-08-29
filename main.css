@@ -1044,6 +1044,12 @@ body {
   }
   .sectionLocation .sectionLocation__Articles {
     scrollbar-width: thin;
+    scrollbar-color: #FCA311 rgba(20, 33, 61, 0.4);
+    padding-bottom: 10px;
+  }
+  .sectionActivity .sectionActivity__Articles {
+    scrollbar-width: thin;
+    scrollbar-color: #FCA311 rgba(20, 33, 61, 0.4);
     padding-bottom: 10px;
   }
   .sectionRdv {
