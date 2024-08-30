@@ -1,0 +1,266 @@
+@import 'responsive/reset.scss';
+@import 'components/font.scss';
+
+@import 'components/theme.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/portfolio.scss';
+@import 'components/card.scss';
+@import 'components/button.scss';
+
+
+:root {
+    background: #f9e7ca;
+}
+
+body {
+    font-family: 'Playwrite';
+    background: #f9e7ca;
+    max-width: 1440px;
+    // height: 100vh;
+    margin: 0 auto;
+}
+
+.body--Vols {
+    background: $white;
+}
+
+.sectionLocation {
+    margin: 40px 15px;
+
+    .sectionLocation__Header {
+        margin: 15px 5px 24px 5px;
+
+        h2 {
+            display: inline-block;
+            font-size: 100%;
+            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 90%;
+            margin: 0 0 10px 10px;
+        }
+    }
+    
+    .sectionLocation__Articles {
+        margin: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    .sectionLocation__More {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            display: inline-block;
+            font-size: 80%;
+            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+        }
+
+        .sectionLocation__More__Link {
+            margin: 0;
+            @include button--style;
+        }
+    }
+}
+
+.sectionActivity {
+    margin: 0px 20px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba($color: $indigo, $alpha: .7) 20%, rgba($color: $yellow, $alpha: .9));
+
+    .sectionActivity__Header {
+        margin: 0 15px;
+
+        h2 {
+            display: inline-block;
+            font-size: 100%;
+            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 90%;
+            margin: 0 0 10px 10px;
+        }
+    }
+
+    .sectionActivity__Articles {
+        margin: 15px 0 0 0;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 25px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+}
+
+.sectionRdv {
+    margin: 50px 10px;
+    padding: 5px;
+    background: rgba($color: $indigo, $alpha: .1);
+    border: 2px solid $grey;
+
+    .sectionRdv__Header {
+        margin: 15px 5px 24px 5px;
+
+        h2 {
+            display: inline-block;
+            font-size: 100%;
+            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 90%;
+            margin: 0 0 10px 10px;
+        }
+    }
+
+    .sectionRdv__Form {
+        margin: 0 10px;
+        padding: 10px;
+        border: 2px dashed rgba($color: $yellow, $alpha: .9);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sectionRdv__Form__Box {
+        display: flex;
+        gap: 10px;
+
+        .form__Item {
+            font-family: 'Playwrite';
+            min-width: 0;
+            min-height: 45px;
+            flex: auto;
+            background: rgba($color: $white, $alpha: .5);
+            border: 1px solid rgba($color: $grey, $alpha: 1.0);
+            border-radius: 10px;
+            color: rgba($color: $yellow, $alpha: .8);
+        }
+
+        .form__Item::placeholder {
+            opacity: .8;
+            color: $black;
+            font-weight: bold;
+            font-size: 70%;
+        }
+
+        .form__Item:focus {
+            outline: 1px solid rgba($color: $yellow, $alpha: .9);
+            background: rgba($color: $white, $alpha: 0);
+            // border-color: rgba($color: $yellow, $alpha: .9);
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            font-family: 'Playwrite';
+            @include button--style;
+        }
+    }
+
+    .sectionRdv__Map {
+        margin: 10px 0;
+        display: flex;
+
+        iframe {
+            // min-width: 0;
+            height: 400px;
+            flex: auto;
+        }
+    }
+}
+
+.sectionVol {
+    margin: 0px 10px 60px 10px;
+    padding: 5px;
+    background: rgba($color: $indigo, $alpha: .1);
+    border: 2px solid $grey;
+
+    .sectionVol__Header {
+        margin: 15px 5px 24px 5px;
+        display: inline-block;
+        font-size: 90%;
+        border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+        margin-bottom: 10px;
+    }
+
+    .sectionVol__Text {
+        font-size: 70%;
+        margin: 0 0 24px 10px;
+    }
+
+    .sectionVol__Form {
+        margin: 0 10px;
+        padding: 10px;
+        border: 2px dashed rgba($color: $yellow, $alpha: .9);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sectionVol__Form__Box {
+        display: flex;
+        gap: 10px;
+
+        .form__Item {
+            font-family: 'Playwrite';
+            min-width: 0;
+            height: 50px;
+            flex: auto;
+            background: rgba($color: $white, $alpha: .5);
+            border: 1px solid rgba($color: $grey, $alpha: 1.0);
+            border-radius: 10px;
+            color: rgba($color: $yellow, $alpha: .8);
+        }
+
+        .form__Item::placeholder {
+            opacity: .8;
+            color: $black;
+            font-weight: bold;
+            font-size: 70%;
+        }
+
+        .form__Item:focus {
+            outline: 1px solid rgba($color: $yellow, $alpha: .9);
+            background: rgba($color: $white, $alpha: 0);
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            font-family: 'Playwrite';
+            @include button--style;
+        }
+    }
+
+    .sectionVol__Form__Box:last-child {
+        justify-content: flex-end;
+    }
+}
+
+@import 'about.scss';
+
+
+@media only screen and (min-width: 810px) {
+    @import 'responsive/tablet.scss';
+}
+
+@media only screen and (min-width: 1024px) {
+    @import 'responsive/desktop.scss';
+}

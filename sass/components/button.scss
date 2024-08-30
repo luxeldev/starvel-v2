@@ -1,0 +1,17 @@
+@mixin button--style {
+    font-size: 80%;
+    background: $yellow;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #202020;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background: transparent;
+        border: 2px solid $yellow;
+        color: $yellow;
+    }
+}

@@ -1,0 +1,77 @@
+.sectionVol {
+    background: rgba($color: $yellow, $alpha: .5);
+    margin: 0;
+    border: none;
+
+    .sectionVol__Header {
+        display: none;
+    }
+
+    .sectionVol__Form {
+        margin: 0;
+        padding: 10px;
+
+        border: none;
+
+        display: flex;
+
+        flex-direction: column;
+        
+        gap: 10px;
+    }
+
+    .sectionVol__Form__Box {
+        display: flex;
+        gap: 10px;
+
+        .form__Item {
+            font-family: 'Playwrite';
+            min-width: 0;
+            height: 50px;
+            flex: auto;
+            background: rgba($color: $white, $alpha: .5);
+            border: 1px solid rgba($color: $grey, $alpha: 1.0);
+            border-radius: 10px;
+            color: rgba($color: $yellow, $alpha: .8);
+        }
+
+        .form__Item::placeholder {
+            opacity: .8;
+            color: $black;
+            font-weight: bold;
+            font-size: 70%;
+        }
+
+        .form__Item:focus {
+            outline: 1px solid rgba($color: $yellow, $alpha: .9);
+            background: rgba($color: $white, $alpha: 0);
+            // border-color: rgba($color: $yellow, $alpha: .9);
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+
+            margin: 0
+        }
+    }
+
+    .sectionVol__Form__Box:last-child {
+        justify-content: flex-end;
+    }
+
+    .sectionVol__Form__Box:nth-child(1) {
+
+        .form__Item {
+            max-width: 150px;
+            background: inherit;
+            border: none;
+        }
+    }
+
+    .form__Item--date {
+        max-width: 124px;
+    }
+}

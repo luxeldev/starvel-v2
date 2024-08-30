@@ -1,0 +1,37 @@
+.header {
+    flex-direction: row;
+
+    .subbar__Link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 0 5px;
+        margin: 15px 5px;
+        height: 36px;
+
+
+        background-color: inherit;
+        border-radius: 10px;
+        color: $yellow;
+        transition: all .5s ease-in;
+
+        .subbar__Link__Icon {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .1s, opacity .3s linear;
+        }
+
+        &:hover {
+            color: $indigo;
+            background-color: $yellow;
+            border-radius: 10px;
+            padding: 0 15px;
+
+            .subbar__Link__Icon {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+}
+}
