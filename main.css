@@ -180,7 +180,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 14px;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(120, 120, 120, 0.9);
 }
 .footer .footer__Element__Title {
   display: inline-block;
@@ -188,7 +188,7 @@ a {
   margin-bottom: 10px;
   font-size: 18px;
   border-left: 2px rgba(229, 229, 229, 0.6) solid;
-  color: rgba(1, 1, 1, 0.6);
+  color: rgba(1, 1, 1, 0.9);
 }
 .footer .footer__Element__Content {
   font-size: 14px;
@@ -201,7 +201,7 @@ a {
           flex-direction: column;
 }
 .footer span {
-  color: rgba(1, 1, 1, 0.6);
+  color: rgba(1, 1, 1, 0.9);
 }
 .footer a {
   display: inline-block;

@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 14px;
-    background-color: rgba($color: $black, $alpha: .8);
+    background-color: rgba(120, 120, 120, .9);
 
     .footer__Element__Title {
         display: inline-block;
@@ -16,7 +16,7 @@
         margin-bottom: 10px;
         font-size: 18px;
         border-left: 2px rgba($color: $grey, $alpha: .6) solid;
-        color: rgba($color: $black, $alpha: .6);
+        color: rgba($color: $black, $alpha: .9);
     }
 
     .footer__Element__Content {
@@ -26,7 +26,7 @@
     }
 
     span {
-        color: rgba($color: $black, $alpha: .6);
+        color: rgba($color: $black, $alpha: .9);
     }
 
     a {
