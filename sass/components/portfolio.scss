@@ -1,4 +1,6 @@
-@import "button.scss";
+@use "theme";
+
+@use "button.scss";
 
 .portfolio {
 	width: 100%;
@@ -18,14 +20,14 @@
     z-index: 9998;
 
     .portfolio__Text__Content {
-        color: $white;
+        color: theme.$white;
 
         strong {
             font-size: 120%;
-            color: $indigo;
+            color: theme.$indigo;
             text-transform: uppercase;
             // text-decoration: wavy underline $white;
-            border-bottom: solid 2px $yellow;
+            border-bottom: solid 2px theme.$yellow;
         }
         p {
             width: 75%;
@@ -34,7 +36,7 @@
             font-size: 85%;
         }
         a {
-            @include button--style;
+            @include button.button--style;
         }
     }
 }

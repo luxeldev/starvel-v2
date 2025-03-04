@@ -1,3 +1,5 @@
+@use "theme";
+
 .footer {
     font-family: sans-serif;
     min-height: 102.2px;
@@ -15,8 +17,8 @@
         padding-left: 5px;
         margin-bottom: 10px;
         font-size: 18px;
-        border-left: 2px rgba($color: $grey, $alpha: .6) solid;
-        color: rgba($color: $black, $alpha: .9);
+        border-left: 2px rgba($color: theme.$grey, $alpha: .6) solid;
+        color: rgba($color: theme.$black, $alpha: .9);
     }
 
     .footer__Element__Content {
@@ -26,15 +28,15 @@
     }
 
     span {
-        color: rgba($color: $black, $alpha: .9);
+        color: rgba($color: theme.$black, $alpha: .9);
     }
 
     a {
         display: inline-block;
-        color: $indigo;
+        color: theme.$indigo;
 
         &:hover {
-            color: $yellow;
+            color: theme.$yellow;
         }
     }
 

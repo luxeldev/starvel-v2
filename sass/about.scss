@@ -1,3 +1,5 @@
+@use "components/theme";
+
 .portfolio--About {
   margin-bottom: 64px;
 }
@@ -120,19 +122,19 @@
     }
 
     .sectionAbout__Presentation__Video {
-      border: 2px dashed $grey;
+      border: 2px dashed theme.$grey;
       padding: 24px;
       width: 90vw;
-      background: $indigo;
+      background: theme.$indigo;
     }
 
     .sectionAbout__Presentation__Text {
       margin-top: 64px;
-      color: $yellow;
+      color: theme.$yellow;
       font-size: 28px;
       line-height: 36px;
       text-align: center;
-      text-shadow: 1px 1px 2px $indigo, 0 0 1em $grey, 0 0 0.2em $grey;
+      text-shadow: 1px 1px 2px theme.$indigo, 0 0 1em theme.$grey, 0 0 0.2em theme.$grey;
     }
   }
 }

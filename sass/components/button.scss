@@ -1,6 +1,8 @@
+@use "theme";
+
 @mixin button--style {
     font-size: 80%;
-    background: $yellow;
+    background: theme.$yellow;
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
@@ -11,7 +13,7 @@
 
     &:hover {
         background: transparent;
-        border: 2px solid $yellow;
-        color: $yellow;
+        border: 2px solid theme.$yellow;
+        color: theme.$yellow;
     }
 }

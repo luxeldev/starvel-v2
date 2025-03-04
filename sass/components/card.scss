@@ -1,6 +1,8 @@
+@use "theme";
+
 .card {
     border-radius: 20px;
-    background-color: $white;
+    background-color: theme.$white;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 3px 3px 1px rgba(226, 226, 226, 0.7);
@@ -49,7 +51,7 @@
     }
 
     .cardText {
-        color: $white;
+        color: theme.$white;
         font-size: 85%;
         position: absolute;
         bottom: 15px;

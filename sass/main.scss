@@ -1,12 +1,13 @@
-@import 'responsive/reset.scss';
-@import 'components/font.scss';
+@use "sass:meta";
+@use 'responsive/reset.scss';
+@use 'components/font.scss';
 
-@import 'components/theme.scss';
-@import 'components/header.scss';
-@import 'components/footer.scss';
-@import 'components/portfolio.scss';
-@import 'components/card.scss';
-@import 'components/button.scss';
+@use 'components/theme.scss';
+@use 'components/header.scss';
+@use 'components/footer.scss';
+@use 'components/portfolio.scss';
+@use 'components/card.scss';
+@use 'components/button.scss';
 
 
 :root {
@@ -16,17 +17,17 @@
 body {
     font-family: 'Playwrite';
     background: #f9e7ca;
-    max-width: 1440px;
+    // max-width: 1440px;
     // height: 100vh;
     margin: 0 auto;
 }
 
 .body--Vols {
-    background: $white;
+    background: theme.$white;
 }
 
 .sectionLocation {
-    margin: 40px 15px;
+    margin: 110px 15px;
 
     .sectionLocation__Header {
         margin: 15px 5px 24px 5px;
@@ -34,7 +35,7 @@ body {
         h2 {
             display: inline-block;
             font-size: 100%;
-            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            border-bottom: 2px solid rgba($color: theme.$yellow, $alpha: .5);
             margin-bottom: 10px;
         }
 
@@ -61,21 +62,21 @@ body {
         h3 {
             display: inline-block;
             font-size: 80%;
-            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            border-bottom: 2px solid rgba($color: theme.$yellow, $alpha: .5);
         }
 
         .sectionLocation__More__Link {
             margin: 0;
-            @include button--style;
+            @include button.button--style;
         }
     }
 }
 
 .sectionActivity {
-    margin: 0px 20px;
+    margin: 80px 20px;
     padding: 15px 0;
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba($color: $indigo, $alpha: .7) 20%, rgba($color: $yellow, $alpha: .9));
+    background: linear-gradient(135deg, rgba($color: theme.$indigo, $alpha: .7) 20%, rgba($color: theme.$yellow, $alpha: .9));
 
     .sectionActivity__Header {
         margin: 0 15px;
@@ -83,7 +84,7 @@ body {
         h2 {
             display: inline-block;
             font-size: 100%;
-            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            border-bottom: 2px solid rgba($color: theme.$yellow, $alpha: .5);
             margin-bottom: 10px;
         }
 
@@ -104,10 +105,10 @@ body {
 }
 
 .sectionRdv {
-    margin: 50px 10px;
+    margin: 110px 35px;
     padding: 5px;
-    background: rgba($color: $indigo, $alpha: .1);
-    border: 2px solid $grey;
+    background: rgba($color: theme.$indigo, $alpha: .1);
+    border: 2px solid theme.$grey;
 
     .sectionRdv__Header {
         margin: 15px 5px 24px 5px;
@@ -115,7 +116,7 @@ body {
         h2 {
             display: inline-block;
             font-size: 100%;
-            border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+            border-bottom: 2px solid rgba($color: theme.$yellow, $alpha: .5);
             margin-bottom: 10px;
         }
 
@@ -128,37 +129,40 @@ body {
     .sectionRdv__Form {
         margin: 0 10px;
         padding: 10px;
-        border: 2px dashed rgba($color: $yellow, $alpha: .9);
+        border: 2px dashed rgba($color: theme.$yellow, $alpha: .9);
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .sectionRdv__Form__Box {
         display: flex;
-        gap: 10px;
+        gap: 15px;
 
         .form__Item {
             font-family: 'Playwrite';
+            font-size: 15px;
+            font-weight: 100;
             min-width: 0;
             min-height: 45px;
             flex: auto;
-            background: rgba($color: $white, $alpha: .5);
-            border: 1px solid rgba($color: $grey, $alpha: 1.0);
+            background: rgba($color: theme.$white, $alpha: .5);
+            border: 1px solid rgba($color: theme.$grey, $alpha: 1.0);
             border-radius: 10px;
-            color: rgba($color: $yellow, $alpha: .8);
+            color: rgba($color: theme.$yellow, $alpha: .8);
         }
 
         .form__Item::placeholder {
+            font-weight: 100;
             opacity: .8;
-            color: $black;
+            color: theme.$black;
             font-weight: bold;
             font-size: 70%;
         }
 
         .form__Item:focus {
-            outline: 1px solid rgba($color: $yellow, $alpha: .9);
-            background: rgba($color: $white, $alpha: 0);
+            outline: 1px solid rgba($color: theme.$yellow, $alpha: .9);
+            background: rgba($color: theme.$white, $alpha: 0);
             // border-color: rgba($color: $yellow, $alpha: .9);
         }
 
@@ -168,7 +172,7 @@ body {
 
         button {
             font-family: 'Playwrite';
-            @include button--style;
+            @include button.button--style;
         }
     }
 
@@ -187,14 +191,14 @@ body {
 .sectionVol {
     margin: 0px 10px 60px 10px;
     padding: 5px;
-    background: rgba($color: $indigo, $alpha: .1);
-    border: 2px solid $grey;
+    background: rgba($color: theme.$indigo, $alpha: .1);
+    border: 2px solid theme.$grey;
 
     .sectionVol__Header {
         margin: 15px 5px 24px 5px;
         display: inline-block;
         font-size: 90%;
-        border-bottom: 2px solid rgba($color: $yellow, $alpha: .5);
+        border-bottom: 2px solid rgba($color: theme.$yellow, $alpha: .5);
         margin-bottom: 10px;
     }
 
@@ -206,7 +210,7 @@ body {
     .sectionVol__Form {
         margin: 0 10px;
         padding: 10px;
-        border: 2px dashed rgba($color: $yellow, $alpha: .9);
+        border: 2px dashed rgba($color: theme.$yellow, $alpha: .9);
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -221,22 +225,22 @@ body {
             min-width: 0;
             height: 50px;
             flex: auto;
-            background: rgba($color: $white, $alpha: .5);
-            border: 1px solid rgba($color: $grey, $alpha: 1.0);
+            background: rgba($color: theme.$white, $alpha: .5);
+            border: 1px solid rgba($color: theme.$grey, $alpha: 1.0);
             border-radius: 10px;
-            color: rgba($color: $yellow, $alpha: .8);
+            color: rgba($color: theme.$yellow, $alpha: .8);
         }
 
         .form__Item::placeholder {
             opacity: .8;
-            color: $black;
+            color: theme.$black;
             font-weight: bold;
             font-size: 70%;
         }
 
         .form__Item:focus {
-            outline: 1px solid rgba($color: $yellow, $alpha: .9);
-            background: rgba($color: $white, $alpha: 0);
+            outline: 1px solid rgba($color: theme.$yellow, $alpha: .9);
+            background: rgba($color: theme.$white, $alpha: 0);
         }
 
         textarea {
@@ -245,7 +249,7 @@ body {
 
         button {
             font-family: 'Playwrite';
-            @include button--style;
+            @include button.button--style;
         }
     }
 
@@ -254,13 +258,20 @@ body {
     }
 }
 
-@import 'about.scss';
+@include meta.load-css('about.scss');
 
+
+@media only screen and (min-width: 518px) {
+    .sectionRdv {
+        max-width: 65vw;
+    }
+    
+}
 
 @media only screen and (min-width: 810px) {
-    @import 'responsive/tablet.scss';
+    @include meta.load-css('responsive/tablet.scss');
 }
 
 @media only screen and (min-width: 1024px) {
-    @import 'responsive/desktop.scss';
+    @include meta.load-css('responsive/desktop.scss');
 }
